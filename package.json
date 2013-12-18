@@ -1,0 +1,17 @@
+{
+  "name": "flex-grids",
+  "version": "0.0.1",
+  "description": "A grid system that uses flex-box",
+  "keywords": [
+    "css",
+    "sass",
+    "flex-box",
+    "grids"
+  ],
+  "author": "Luke Larsen <luke@lukelarsen.com>",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-autoprefixer": "~0.5.0"
+  },
+  "dependencies": {}
+}

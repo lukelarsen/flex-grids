@@ -1,0 +1,372 @@
+@import url(normalize.css);
+/*------------------------------------*\
+    CONTENTS
+\*------------------------------------*/
+/**
+ * VARIABLES
+ * GRID DEFAULT
+ * FLEX CELLS MODIFIER
+ * GROUP WIDTH MODIFIERS
+ * SINGLE WIDTH MODIFIERS
+ * GUTTER MODIFIERS
+ * GROUP ALIGNMENT MODIFIERS
+ * SINGLE ALIGNMENT MODIFIERS
+ * RESPONSIVE
+ * HELP FIREFOX
+*/
+/*------------------------------------*\ 
+    $VARIABLES
+\*------------------------------------*/
+/**
+ * Flex Cells
+ */
+/**
+ * Group Alignment
+ */
+/**
+ * Single Alignment
+ */
+/**
+ * Group Width Sizes
+ */
+/**
+ * Single Width Sizes
+ */
+/**
+ * Grid Gutters
+ */
+/**
+ * Responsive
+ */
+/**
+ * These came from CSS Wizardry Grids - http://csswizardry.com/csswizardry-grids/
+ *
+ * Define your breakpoints. The first value is the prefix that shall be used for
+ * your classes (e.g. `.palm--full`), the second value is the media query
+ * that the breakpoint fires at.
+ */
+/**
+ * This list will make classes like .palm--full or .palm--grid-halves render in
+ * the css. Your options are 'palm', 'lap', 'portable', 'desk', 'wide'.
+ */
+/*------------------------------------*\
+    GRID DEFAULT
+\*------------------------------------*/
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.grid__item {
+  flex: 1; }
+
+/*------------------------------------*\ 
+    $FLEX CELLS MODIFIER
+\*------------------------------------*/
+/**
+ * Silent Extends
+ */
+/**
+ * This will make all cells the same height
+ *
+ * Apply with the .grid class
+ */
+.grid--flex-cells > .grid__item {
+  display: flex; }
+
+/*------------------------------------*\ 
+    $GROUP WIDTH MODIFIERS
+\*------------------------------------*/
+/**
+ * Silent Extends
+ */
+.grid--thirds > .grid__item {
+  flex: 0 0 33.3333%; }
+
+/**
+ * If we need to set a specific width to all
+ * cells in a grid use these classes
+ *
+ * Apply them with the .grid class.
+ */
+/*------------------------------------*\ 
+    $SINGLE WIDTH MODIFIERS
+\*------------------------------------*/
+/**
+ * Silent Extends
+ */
+.grid__item--full {
+  width: 100%;
+  flex: none !important; }
+
+.grid__item--fifth {
+  width: 20%;
+  flex: none !important; }
+
+/**
+ * We can set individual cell width with these
+ * same location use these classes.
+ *
+ * Apply them with the .grid__item class.
+ */
+/*------------------------------------*\ 
+    $GUTTER MODIFIERS
+\*------------------------------------*/
+/**
+ * Silent Extends
+ */
+.gutters-small {
+  margin-left: -1em; }
+  .gutters-small > .grid__item {
+    padding-left: 1em;
+    margin-bottom: 1em; }
+
+/**
+ * We can set individual grid gutter width with these.
+ *
+ * Apply them with the .grid class.
+ */
+/*------------------------------------*\
+    $GROUP ALIGNMENT MODIFIERS
+\*------------------------------------*/
+/**
+ * Silent Extends
+ */
+/**
+ * If we need all cells in a grid to align to the
+ * same location use these classes.
+ *
+ * Apply them with the .grid class.
+ */
+/*------------------------------------*\
+    $SINGLE ALIGNMENT MODIFIERS
+\*------------------------------------*/
+/**
+ * Silent Extends
+ */
+/**
+ * If we need single cells in a grid to align to a
+ * specific location use these classes.
+ *
+ * Apply them with the .grid__item class.
+ */
+/*------------------------------------*\ 
+    $RESPONSIVE
+\*------------------------------------*/
+/**
+ * Create our width classes, prefixed by the specified namespace.
+ */
+/**
+ * Our responsive classes, if we have enabled them.
+ */
+@media only screen and (max-width: 480px) {
+  /**
+   * Whole
+   */
+  .grid--palm-full > .grid__item {
+    flex: 0 0 100%; }
+
+  .grid__item--palm-full {
+    width: 100%;
+    flex: none !important; }
+
+  /**
+   * Half
+   */
+  .grid--palm-halves > .grid__item {
+    flex: 0 0 50%; }
+
+  .grid__item--palm-half {
+    width: 50%;
+    flex: none !important; }
+
+  /**
+   * Third
+   */
+  .grid--palm-thirds > .grid__item {
+    flex: 0 0 33.3333%; }
+
+  .grid__item--palm-third {
+    width: 33.3333%;
+    flex: none !important; }
+
+  /**
+   * Quarter
+   */
+  .grid--palm-quarters > .grid__item {
+    flex: 0 0 25%; }
+
+  .grid__item--palm-quarter {
+    width: 25%;
+    flex: none !important; }
+
+  /**
+   * Fifth
+   */
+  .grid--palm-fifths > .grid__item {
+    flex: 0 0 20%; }
+
+  .grid__item--palm-fifth {
+    width: 20%;
+    flex: none !important; }
+
+  /**
+   * Responsive Gutters
+   */
+  /**
+   * Gutter Small
+   */
+  .gutters--palm-small {
+    margin-left: -1em; }
+    .gutters--palm-small > .grid__item {
+      padding-left: 1em;
+      margin-bottom: 1em; }
+
+  /**
+   * Gutter Medium
+   */
+  .gutters--palm-medium {
+    margin-left: -1.5em; }
+    .gutters--palm-medium > .grid__item {
+      padding-left: 1.5em;
+      margin-bottom: 1.5em; }
+
+  /**
+   * Gutter Large
+   */
+  .gutters--palm-large {
+    margin-left: -2em; }
+    .gutters--palm-large > .grid__item {
+      padding-left: 2em;
+      margin-bottom: 2em; }
+
+  /**
+   * Gutter xLarge
+   */
+  .gutters--palm-xlarge {
+    margin-left: -3em; }
+    .gutters--palm-xlarge > .grid__item {
+      padding-left: 3em;
+      margin-bottom: 3em; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  /**
+   * Whole
+   */
+  .grid--lap-full > .grid__item {
+    flex: 0 0 100%; }
+
+  .grid__item--lap-full {
+    width: 100%;
+    flex: none !important; }
+
+  /**
+   * Half
+   */
+  .grid--lap-halves > .grid__item {
+    flex: 0 0 50%; }
+
+  .grid__item--lap-half {
+    width: 50%;
+    flex: none !important; }
+
+  /**
+   * Third
+   */
+  .grid--lap-thirds > .grid__item {
+    flex: 0 0 33.3333%; }
+
+  .grid__item--lap-third {
+    width: 33.3333%;
+    flex: none !important; }
+
+  /**
+   * Quarter
+   */
+  .grid--lap-quarters > .grid__item {
+    flex: 0 0 25%; }
+
+  .grid__item--lap-quarter {
+    width: 25%;
+    flex: none !important; }
+
+  /**
+   * Fifth
+   */
+  .grid--lap-fifths > .grid__item {
+    flex: 0 0 20%; }
+
+  .grid__item--lap-fifth {
+    width: 20%;
+    flex: none !important; }
+
+  /**
+   * Responsive Gutters
+   */
+  /**
+   * Gutter Small
+   */
+  .gutters--lap-small {
+    margin-left: -1em; }
+    .gutters--lap-small > .grid__item {
+      padding-left: 1em;
+      margin-bottom: 1em; }
+
+  /**
+   * Gutter Medium
+   */
+  .gutters--lap-medium {
+    margin-left: -1.5em; }
+    .gutters--lap-medium > .grid__item {
+      padding-left: 1.5em;
+      margin-bottom: 1.5em; }
+
+  /**
+   * Gutter Large
+   */
+  .gutters--lap-large {
+    margin-left: -2em; }
+    .gutters--lap-large > .grid__item {
+      padding-left: 2em;
+      margin-bottom: 2em; }
+
+  /**
+   * Gutter xLarge
+   */
+  .gutters--lap-xlarge {
+    margin-left: -3em; }
+    .gutters--lap-xlarge > .grid__item {
+      padding-left: 3em;
+      margin-bottom: 3em; } }
+/*------------------------------------*\ 
+    $HELP FIREFOX
+\*------------------------------------*/
+@supports not (flex-wrap: wrap) {
+  .grid--ffMultilineSupport {
+    display: block; }
+    .grid--ffMultilineSupport > .Grid-cell {
+      display: inline-block;
+      vertical-align: top; }
+
+  .grid--full {
+    display: block; }
+    .grid--full > .Grid-cell {
+      display: block; }
+
+  .grid--fit,
+  .grid--1of2,
+  .grid--1of3,
+  .grid--1of4 {
+    display: flex; } }
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.block {
+  background-color: red; }
+
+.block--nested {
+  background-color: purple; }
